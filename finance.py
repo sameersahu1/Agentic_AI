@@ -15,7 +15,8 @@ def build_agent():
         markdown=True,
         description="You are an investment analyst that researches stock prices, analyst recommendations, and stock fundamentals.",
         instructions=["Use the given tools whever needed. Format your response using markdown and use tables to display data where possible."],
-        add_datetime_to_context=True
+        add_datetime_to_context=True, 
+        debug_mode = True
     )
 
 agent = build_agent()
